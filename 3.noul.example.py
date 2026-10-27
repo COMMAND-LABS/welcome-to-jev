@@ -1,4 +1,4 @@
-from typesafe_sdk import Noul, NoulCriteria, TypeSafeClient
+from typesafe_sdk import Noul, TypeSafeClient
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -9,7 +9,7 @@ with TypeSafeClient() as client:
         state="This morning, when I arrived at the bus stop to go to work, there was a Cuban man sitting on the bench.",
         questions={
             "is_sitting": Noul(
-                instructions="The Cuban man sitting on the bench.",
+                instructions="The Cuban man is sitting on the bench.",
             ),
         },
     )
