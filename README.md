@@ -1,4 +1,4 @@
-# Jev as a Judge
+# Welcome to Jev
 
 Intro to Jev.
 
