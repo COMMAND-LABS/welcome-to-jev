@@ -5,7 +5,11 @@ load_dotenv()
 
 with TypeSafeClient() as client:
     response = client.system_one(
-        state="I asked my AI agent how many points Kobe Bryant scored in his NBA playoff career? My AI agent said 5,000. The correct answer is 5,640",
+        state="""
+I asked my AI agent how many points Kobe Bryant scored in his NBA playoff career?
+My AI agent said 5,000.
+The correct answer is 5,640.
+""",
         questions={
             "judge": Score(
                 instructions="How would you rate the AI's answer?",

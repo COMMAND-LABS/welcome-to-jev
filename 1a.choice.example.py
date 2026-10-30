@@ -6,7 +6,7 @@ load_dotenv()
 with TypeSafeClient() as client:
     response = client.system_one(
         state="""
-This morning, when I arrived at the bus stop to go to work, there was a Cuban man sitting on the bench.
+Today, when I arrived at the bus stop to go to work, there was a man sitting on the bench.
         """,
         questions={
             "nationality": Choice(
